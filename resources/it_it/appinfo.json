@@ -1,0 +1,26 @@
+{
+	"id"              : "eu.medesimo.codicefiscale",
+	"version"         : "1.0.0",
+	"icon"            : "../../icon.png",
+	"vendor"          : "Eugenio Paolantonio",
+	"type"            : "web",
+	"main"            : "../../index.html",
+	"title"           : "Codici Fiscali",
+	"uiRevision"      : "2",
+	"keywords"        : ["codici","fiscali","codice","fiscale","italian","fiscal","codes"],
+	"universalSearch" : {
+		"action": { 
+			"displayName" : "Nuovo Codice Fiscale",
+			"url"         : "eu.medesimo.codicefiscale",
+			"launchParam" : {"newCodice":"#{searchTerms}"}
+		},
+		"dbsearch":{
+			"displayName"       : "Codici Fiscali",
+			"url"               : "eu.medesimo.codicefiscale",
+			"launchParam"       : "showCodice",
+			"launchParamDbField": "_id",
+			"displayFields"     : ["jtype", "codice"],
+			"dbQuery"           : {"from":"eu.medesimo.codicefiscale:1", "where":[{"prop":"jtype","op":"?","val":"","collate":"primary", "tokenize":"all"}],"orderBy":"jtype","limit":20}
+		}
+   } 
+}

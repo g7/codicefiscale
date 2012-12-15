@@ -1,0 +1,16 @@
+.holder {
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	pointer-events: none;
+	font-size: .9rem;
+	width: auto;
+	max-width: 570px;
+	height: auto;
+}
+
+
+.toolbar {
+	background: #007C04,
+}

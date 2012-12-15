@@ -1,0 +1,14 @@
+1.0.1
+=====
+
+- Paterno (G371) -> Paterno'
+- Costa D Avorio -> Costa D'Avorio
+- Stati Uniti D America -> Stati Uniti D'America
+- Sorted countries by name
+- Do not strip spaces and ' on Name and Surname
+- Parse too the municipality text field
+
+1.0.0
+=====
+
+Initial release.
